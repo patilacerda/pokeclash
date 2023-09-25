@@ -1,0 +1,9 @@
+body {
+    background-color: #063d98;
+}
+
+.arena {
+    width: 400px;
+    height: 400px;
+    background: #60c505;
+}
