@@ -36,7 +36,7 @@ body {
     text-align: center;
 }
 
-#cards, #score {
+#cards, .score {
     max-width: 64%;
     height: 10rem;
     display: flex;

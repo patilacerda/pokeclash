@@ -1,6 +1,12 @@
 let player;
+let playerScore = 0;
 let opponent;
-var cards = ["assets/images/bulbasaur.png", "assets/images/charmander.png", "assets/images/squirtle.png"];
+let opponentScore = 0;
+let bulbasaur = "assets/images/bulbasaur.png";
+let charmander = "assets/images/charmander.png";
+let squirtle = "assets/images/squirtle.png";
+
+var cards = [bulbasaur, charmander, squirtle];
 
 window.onload = function () {
     for (let i = 0; i < 3; i++) {
@@ -19,5 +25,39 @@ function selectCard() {
 
     opponent = cards[Math.floor(Math.random() * 3)];
     document.getElementById("opponent-choice").src = opponent;
+
+    if (player == opponent) {
+        playerScore += 1;
+        opponentScore += 1;
+    }
+    else {
+        if (player == bulbasaur) {
+            if (opponent == squirtle) {
+                playerScore += 1;
+            }
+            else if (opponent == charmander) {
+                opponentScore += 1;
+            }
+        }
+        else if (player == charmander) {
+            if (opponent == bulbasaur) {
+                playerScore += 1;
+            }
+            else if (opponent == squirtle) {
+                opponentScore += 1;
+            }
+        }
+        else if (player == squirtle) {
+            if (opponent == charmander) {
+                playerScore += 1;
+            }
+        else if (opponent == bulbasaur) {
+                opponentScore += 1;
+            }
+        }
+    }
+
+    document.getElementById("player-score").innerText = playerScore;
+    document.getElementById("opponent-score").innerText = opponentScore;
 
 }
