@@ -6,7 +6,7 @@ body {
 .arena {
     max-width: 60rem;
     height: 30rem;
-    background: #60c505;
+    background: url("../images/background.jpg") no-repeat center center/cover;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -16,13 +16,16 @@ body {
 }
 
 #opponent-choice, #player-choice {
-    max-width: 45%;
-    height: 20rem;
-    background-color: whitesmoke;
-    margin: 48px;
+    max-width: 35%;
+    margin: 75px;
+}
+
+#player-choice {
+    transform: scaleX(-1);
 }
 
 .controls {
+    background-color: #eaedc8;
     max-width: 60rem;
     height: 5rem;
     margin: auto;
@@ -36,7 +39,6 @@ body {
 #cards, #score {
     max-width: 64%;
     height: 10rem;
-    background-color: whitesmoke;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
