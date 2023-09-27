@@ -1,9 +1,40 @@
 body {
     background-color: #063d98;
+    text-align: center;
 }
 
 .arena {
-    width: 400px;
-    height: 400px;
+    max-width: 60rem;
+    height: 30rem;
     background: #60c505;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#opponent-choice, #player-choice {
+    max-width: 45%;
+    height: 20rem;
+    background-color: whitesmoke;
+    margin: 48px;
+}
+
+.controls {
+    max-width: 60rem;
+    height: 5rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#cards, #score {
+    max-width: 64%;
+    height: 10rem;
+    background-color: whitesmoke;
 }
