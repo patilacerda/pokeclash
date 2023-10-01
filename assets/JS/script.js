@@ -6,7 +6,7 @@ let bulbasaur = "assets/images/bulbasaur.png";
 let charmander = "assets/images/charmander.png";
 let squirtle = "assets/images/squirtle.png";
 
-var cards = [bulbasaur, charmander, squirtle];
+let cards = [bulbasaur, charmander, squirtle];
 
 window.onload = function () {
     for (let i = 0; i < 3; i++) {

@@ -9,10 +9,10 @@ body {
     background: url("../images/background.jpg") no-repeat center center/cover;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 #opponent-choice, #player-choice {
@@ -36,7 +36,7 @@ body {
     text-align: center;
 }
 
-#cards, .score {
+#cards {
     max-width: 64%;
     height: 10rem;
     display: flex;
