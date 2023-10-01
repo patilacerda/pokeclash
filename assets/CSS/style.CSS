@@ -24,6 +24,9 @@ body {
     transform: scaleX(-1);
 }
 
+#pokeball {
+    width: 28px;
+}
 .controls {
     background-color: #eaedc8;
     max-width: 60rem;
