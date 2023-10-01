@@ -1,11 +1,18 @@
+/*Google fonts import*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
     background-color: #063d98;
     text-align: center;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .arena {
     max-width: 60rem;
     height: 30rem;
+    border: black solid 4px;
+    border-radius: 6px;
+    box-shadow: black 0px -2px 10px;
     background: url("../images/background.jpg") no-repeat center center/cover;
     margin: auto;
     display: flex;
@@ -13,6 +20,11 @@ body {
     justify-content: center;
     text-align: center;
     align-items: center;
+}
+
+.arena p {
+    color: whitesmoke;
+    text-shadow: black 2px 2px 2px;
 }
 
 #opponent-choice, #player-choice {
@@ -24,11 +36,11 @@ body {
     transform: scaleX(-1);
 }
 
-#pokeball {
-    width: 28px;
-}
 .controls {
     background-color: #eaedc8;
+    border: black double 6px;
+    border-radius: 6px;
+    box-shadow: black 0px -2px 10px;
     max-width: 60rem;
     height: 5rem;
     margin: auto;
@@ -37,6 +49,12 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    text-shadow: whitesmoke 2px 2px 2px;
+}
+
+#pokeball {
+    width: 28px;
+    padding: 0 20px 0 20px;
 }
 
 #cards {
