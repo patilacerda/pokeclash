@@ -3,7 +3,7 @@
 
 /*General Styles*/
 body {
-    background-color: #063d98;
+    background-color: #AFD4E8;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
     overflow-x: hidden;
@@ -13,7 +13,7 @@ body {
 /*Insert Name Div*/
 .name-input {
     top: 17rem;
-    display: none;
+    display: block;
 }
 
 .name-input input {
@@ -76,7 +76,6 @@ body {
 .arena p {
     color: whitesmoke;
     text-shadow: black 2px 2px 2px;
-    line-height: 24px;
 }
 
 .player, .opponent {
@@ -233,4 +232,4 @@ body {
     body {
         margin-top: 6rem;
     }
-    }
+}

@@ -15,20 +15,22 @@
         <h3>Welcome to Pokeclash!</h3>
         <p>
             Insert your Trainer's name!<br>
-            <input type="text"></br>
-            <button type="submit" >Let's Start</button>
+            <input type="text" id="player-name"></br>
+            <button type="submit" id="start-button">Go</button>
         </p>
     </div>
 
     <!--Game area-->
     <div class="arena">
         <div class="player">
-            <p>You <br><span id="player-score">0</span></p>
+            <p id="player-input">You</p>
+            <p><span id="player-score">0</span></p>
         </br>
             <img id="player-choice">
         </div>
         <div class="opponent">
-            <p>Team Rocket <br><span id="opponent-score">0</span></p>
+            <p>Team Rocket</p>
+            <p><span id="opponent-score">0</span></p>
         </br>
             <img id="opponent-choice">
         </div>

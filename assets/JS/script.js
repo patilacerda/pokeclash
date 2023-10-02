@@ -1,3 +1,4 @@
+let playerName = "";
 let player;
 let playerScore = 0;
 let opponent;
@@ -12,7 +13,34 @@ let gameEnded = false;
 
 let cards = [bulbasaur, charmander, squirtle];
 
-window.onload = function startGame() {
+//Add an event listener to the start button
+document.getElementById("start-button").addEventListener("click", function () {
+    startGame(); // Call the startGame() function
+});
+
+//Add an event listener to the DOMContentLoaded event
+document.addEventListener("DOMContentLoaded", function () {
+    //Display the name input div when page load
+    document.querySelector(".name-input").style.display = "block";
+
+});
+
+function startGame() {
+
+    playerName = document.getElementById("player-name").value;
+
+    if (playerName === "") {
+        //Default name if the input is empty
+        playerName = "You"; 
+        document.querySelector(".name-input").style.display = "none";
+    } else {
+        //Hide the name input div if a name is entered
+        document.querySelector(".name-input").style.display = "none";
+
+        //Update player's name
+        document.getElementById("player-input").innerText = playerName;
+    }
+
     //Placeholder
     document.getElementById("player-choice").src = empty;
     document.getElementById("opponent-choice").src = empty;
@@ -45,8 +73,7 @@ function selectCard() {
 
     //Check scores
     if (player == opponent) {
-        playerScore += 1;
-        opponentScore += 1;
+
     }
     else {
         //Grass type beat water type
@@ -85,7 +112,7 @@ function selectCard() {
     document.getElementById("player-score").innerText = playerScore;
     document.getElementById("opponent-score").innerText = opponentScore;
 
-    // Remove a round element
+    //Remove a round element
     let rounds = document.querySelectorAll("#pokeballs img");
     if (rounds.length > 0) {
         document.getElementById("pokeballs").removeChild(rounds[0]);
