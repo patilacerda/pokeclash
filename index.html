@@ -9,25 +9,56 @@
 </head>
 <body>
     <h1>Pokemon Battle</h1>
+
+    <!--Player's name-->
+    <div class="name-input">
+        <h3>Welcome to Pokeclash!</h3>
+        <p>
+            Insert your Trainer's name!<br>
+            <input type="text"></br>
+            <button type="submit" >Let's Start</button>
+        </p>
+    </div>
+
+    <!--Game area-->
     <div class="arena">
         <div class="player">
-            <p>You <span id="player-score">0</span></p>
+            <p>You <br><span id="player-score">0</span></p>
         </br>
             <img id="player-choice">
         </div>
         <div class="opponent">
-            <p>Rocket team <span id="opponent-score">0</span></p>
+            <p>Team Rocket <br><span id="opponent-score">0</span></p>
         </br>
             <img id="opponent-choice">
         </div>
     </div>
+
+    <!--Controls area-->
     <div class="controls">
         <div class="rounds">
-            <p>Choose your pokemon!</p>
+            <p>Choose your Pokémon!</p>
             <p><span id="pokeballs"></span></p>
         </div>
         <div id="cards"></div>
     </div>
+
+    <!--Rules-->
+    <div class="rules">
+        <h3>How to play</h3>
+        <p>
+            Grass beats Water<br>
+            <i class="fa-brands fa-envira"></i> > <i class="fa-solid fa-droplet"></i><br>
+            Fire beats Grass<br>
+            <i class="fa-solid fa-fire"></i> > <i class="fa-brands fa-envira"></i><br>
+            Water beats Fire<br>
+            <i class="fa-solid fa-droplet"></i> > <i class="fa-solid fa-fire"></i>
+        </p>
+
+    </div>
+
     <script src="assets/JS/script.js"></script>
+    <script src="https://kit.fontawesome.com/467e25aa0a.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
