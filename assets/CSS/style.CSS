@@ -1,12 +1,62 @@
 /*Google fonts import*/
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+/*General Styles*/
 body {
     background-color: #063d98;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
+    overflow-x: hidden;
+    display: block;
 }
 
+/*Insert Name Div*/
+.name-input {
+    top: 17rem;
+    display: none;
+}
+
+.name-input input {
+    border-width: 3px;
+    margin-top: 10px;
+    padding: 0px 15px 10px 15px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.name-input button {
+    background-color: #ff1c1c;
+    border-width: 3px;
+    color: white;
+    text-shadow: black 2px 3px 2px;
+    font-family: 'Press Start 2P', cursive;
+    height: 22px;
+    margin-top: 10px;
+    padding: 10px 7px 20px 7px;
+}
+
+/*Rules Div*/
+.rules {
+    bottom: 11rem;
+    display: none;
+}
+
+.name-input, .rules {
+    background: #eaedc8;
+    max-width: 14rem;
+    border: black double 6px;
+    border-radius: 6px;
+    box-shadow: black 0px -2px 10px;
+    text-shadow: whitesmoke 2px 2px 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    line-height: 24px;
+}
+
+/*Game area*/
 .arena {
     max-width: 60rem;
     height: 30rem;
@@ -16,55 +66,171 @@ body {
     background: url("../images/background.jpg") no-repeat center center/cover;
     margin: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
 }
 
+/*Score styles*/
 .arena p {
     color: whitesmoke;
     text-shadow: black 2px 2px 2px;
+    line-height: 24px;
+}
+
+.player, .opponent {
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #opponent-choice, #player-choice {
-    max-width: 35%;
-    margin: 75px;
+    max-width: 50%;
+    margin: 10px;
 }
 
 #player-choice {
     transform: scaleX(-1);
 }
 
+/*Controls div*/
 .controls {
     background-color: #eaedc8;
     border: black double 6px;
     border-radius: 6px;
     box-shadow: black 0px -2px 10px;
     max-width: 60rem;
-    height: 5rem;
+    height: fit-content;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
     text-align: center;
+    align-items: center;
     text-shadow: whitesmoke 2px 2px 2px;
 }
 
+/*Rounds div*/
+.rounds {
+    height: 6.5rem;
+}
+
 #pokeball {
-    width: 28px;
-    padding: 0 20px 0 20px;
+    width: 20px;
+    padding: 0 10px 0 10px;
 }
 
 #cards {
     max-width: 64%;
-    height: 10rem;
+    height: fit-content;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 #cards img {
-    max-width: 4rem;
+    max-width: 4.3rem;
+    margin: 9px 4px 2px 4px;
 }
+
+/*Media query: Iphone Screen(390px)*/
+@media screen and (min-width: 390px){
+
+    .arena {
+        height: 34rem;
+    }
+
+    #opponent-choice, #player-choice {
+        max-width: 9rem;
+        margin: 10px;
+        padding: 0 90px 0 90px;
+    }
+
+    .rules {
+        bottom: 22rem;
+    }
+}
+
+/*Media query: large or landscape phones(650px and up)*/
+@media screen and (min-width: 650px) {
+    .name-input, .rules {        
+        max-width: fit-content;
+        padding: 0 10px 0 10px;
+    }
+
+    .rules {
+        bottom: -10rem;
+    }
+
+    .arena {
+        max-width: 60rem;
+        flex-direction: row;
+    }
+
+    .rounds {
+        max-width: 40%;
+    }
+
+    .controls {
+        max-width: 60rem;
+        height: 5rem;
+        margin: auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #cards {
+        background: url("../images/controlsbck.png") no-repeat center center/cover;
+        width: 378px;
+        height: 10rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;}
+
+    #cards img {
+        max-width: 4rem;
+        margin: auto;
+    }
+
+}
+
+/* Media query: tablets and larger (768 and up) */
+@media screen and (min-width: 768px) {
+    .arena {
+        max-width: 60rem;
+        height: 28rem;
+    }
+
+    .rules {
+        top: 15rem;
+        bottom: auto;
+    }
+
+    #opponent-choice, #player-choice {
+        max-width: 17rem;
+    }
+
+    #pokeball {
+        width: 28px;
+        padding: 0 10px 0 10px;
+    }
+}
+
+/* Media query: laptops and desktops 992 and up */
+@media screen and (min-width: 992px) {
+    .arena {
+        height: 33rem;
+    }
+}
+
+/*Media query: large screens*/
+@media screen and (min-width: 1408px){
+    body {
+        margin-top: 6rem;
+    }
+    }
