@@ -25,9 +25,10 @@
     <main>
         <!--Player's name-->
         <div class="name-input">
-            <h3>Welcome to Pokéclash!</h3>
+            <h2>Welcome to Pokéclash!</h2>
             <p>
-                Insert your Trainer's name<br>
+                <img src="assets/images/pikachu.png" alt="Pikachu" width="40px" height="auto" id="pikachu">
+                <label for="player-name">Insert your Trainer's name</label><br>
                 <input type="text" id="player-name"><br>
                 <button id="start-button">Go</button>
             </p>
@@ -37,13 +38,11 @@
             <div class="player">
                 <p id="player-input">You</p>
                 <p><span id="player-score">0</span></p>
-                <br>
                 <img src="assets/images/empty.png" alt="placeholder" id="player-choice">
             </div>
             <div class="opponent">
                 <p>Team Rocket</p>
                 <p><span id="opponent-score">0</span></p>
-                <br>
                 <img src="assets/images/empty.png" alt="placeholder" id="opponent-choice">
             </div>
         </div>
@@ -51,10 +50,10 @@
         <div class="controls">
             <div class="btns">
                 <p>
-                    <button id="info" aria-label="Click here to open the rule's tab.">
+                    <button id="info" aria-label="Click here to open the rule's tab." title="Click here to open the rule's tab.">
                         <i class="fa-solid fa-circle-info"></i>
                     </button>
-                    <button id="play-audio" aria-label="Click here to play or pause the background song.">
+                    <button id="play-audio" aria-label="Click here to play or pause the background song." title="Click here to play or pause the background song.">
                         <i class="fa-solid fa-music"></i>
                     </button>
                 </p>
@@ -81,19 +80,19 @@
     <footer>
         <ul id="social-networks">
             <li><a href="https://www.pokemon.com/us/pokedex" target="_blank" rel="noopener"
-                    aria-label="Access the Pokedex for all your Pokémon information needs(opens in a newtab)"><i
+                    aria-label="Access the Pokedex for all your Pokémon information needs(opens in a newtab)" title="Pokedex"><i
                         class="fa-solid fa-circle-half-stroke"></i></a></li>
             <li><a href="https://www.youtube.com/user/Pokemon" target="_blank" rel="noopener"
-                    aria-label="Acess The Official Pokemon Youtube channel(opens in a newtab)"><i
+                    aria-label="Acess The Official Pokemon Youtube channel(opens in a newtab)" title="Pokemon channel"><i
                         class="fa-brands fa-youtube"></i></a></li>
             <li>
-                <a href="https://www.discord.com/" target="_blank" rel="noopener"
-                    aria-label="Connect with other Pokemon trainers on this Discord server(opens in a newtab)"><i
+                <a href="https://discord.com/invite/pokemon" target="_blank" rel="noopener"
+                    aria-label="Connect with other Pokemon trainers on this Discord server(opens in a newtab)" title="Discord server"><i
                         class="fa-brands fa-discord"></i></a>
             </li>
             <li>
-                <a href="https://www.twitter.com/" target="_blank" rel="noopener"
-                    aria-label="Stay connected to the latest news about Pokemon by following us on Twitter!(opens in a newtab)"><i
+                <a href="https://twitter.com/Pokemon" target="_blank" rel="noopener"
+                    aria-label="Stay connected to the latest news about Pokemon by following us on Twitter!(opens in a newtab)" title="Pokemon Twitter"><i
                         class="fa-brands fa-x-twitter"></i></a>
             </li>
         </ul>
@@ -101,7 +100,7 @@
     <!--Background song-->
     <audio id="audio" src="assets/audio/Pokemon-Theme-16-bit.mp3" loop></audio>
     <!--Javascript-->
-    <script src="assets/JS/script.js"></script>
+    <script src="assets/JS/script.js" defer></script>
     <!--Fontawesome-->
     <script src="https://kit.fontawesome.com/467e25aa0a.js" crossorigin="anonymous"></script>
 </body>

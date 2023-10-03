@@ -15,7 +15,9 @@ h1 {
     color: black;
     text-shadow: whitesmoke -5px 5px 1px;
 }
-
+h2 {
+    font-size: large;
+}
 /*Insert Name Div*/
 .name-input {
     top: 17rem;
@@ -31,6 +33,10 @@ h1 {
     font-family: 'Press Start 2P', cursive;
 }
 
+#pikachu {
+    display: none;
+}
+
 .name-input button {
     background-color: #B30000;
     border-width: 3px;
@@ -40,6 +46,7 @@ h1 {
     height: 22px;
     margin-top: 10px;
     padding: 10px 7px 20px 7px;
+    cursor: pointer;
 }
 
 /*Rules Div*/
@@ -133,6 +140,7 @@ h1 {
     all: unset;
     font-size: 25px;
     margin-bottom: 4px;
+    cursor: pointer;
 }
 
 #pokeball {
@@ -151,6 +159,7 @@ h1 {
 #cards img {
     max-width: 4.3rem;
     margin: 9px 4px 2px 4px;
+    cursor: pointer;
 }
 
 /*Footer*/
@@ -170,6 +179,7 @@ h1 {
     text-shadow: whitesmoke 2px 2px 2px;
     text-align: center;
     margin: 5px 20px 0 20px;
+    cursor: pointer;
 }
 
 i.fa-solid.fa-circle-half-stroke {
@@ -323,6 +333,13 @@ i.fa-solid.fa-circle-half-stroke {
     .name-input,
     .rules {
         top: 18rem;
+    }
+
+    #pikachu {
+        display: block;
+        width: 7rem;
+        margin-left: 40%;
+        margin-top: -15px;
     }
 
     .arena {
