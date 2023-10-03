@@ -10,6 +10,12 @@ body {
     display: block;
 }
 
+h1 {
+    font-size: 5vw;
+    color: black;
+    text-shadow: whitesmoke -5px 5px 1px;
+}
+
 /*Insert Name Div*/
 .name-input {
     top: 17rem;
@@ -42,7 +48,8 @@ body {
     display: none;
 }
 
-.name-input, .rules {
+.name-input,
+.rules {
     background: #eaedc8;
     max-width: 14rem;
     border: black double 6px;
@@ -80,7 +87,8 @@ body {
     text-shadow: black 2px 2px 2px;
 }
 
-.player, .opponent {
+.player,
+.opponent {
     height: 15rem;
     display: flex;
     flex-direction: column;
@@ -88,7 +96,8 @@ body {
     justify-content: center;
 }
 
-#opponent-choice, #player-choice {
+#opponent-choice,
+#player-choice {
     max-width: 50%;
     margin: 10px;
 }
@@ -119,7 +128,8 @@ body {
     height: 6.5rem;
 }
 
-#info, #play-audio {
+#info,
+#play-audio {
     all: unset;
     font-size: 20px;
 }
@@ -142,17 +152,78 @@ body {
     margin: 9px 4px 2px 4px;
 }
 
-/*Media query: Iphone Screen(390px)*/
-@media screen and (min-width: 390px){
+/*Footer*/
+#social-networks {
+    max-width: 60rem;
+    text-align: center;
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: black;
+    text-shadow: whitesmoke 2px 2px 2px;
+    text-align: center;
+    margin: 5px 20px 0 20px;
+}
+
+i.fa-solid.fa-circle-half-stroke {
+    transform: rotate(90deg);
+}
+
+/*Media query: smaller screens (290px)*/
+@media screen and (min-width: 290px) {
+    .name-input {
+        top: 13rem;
+    }
+
+    .player,
+    .opponent {
+        max-width: 14rem;
+    }
+
+    #social-networks {
+        margin-left: -40;
+    }
+
+    #social-networks i {
+        font-size: 130%;
+        margin: 0px 10px 0 10px;
+    }
+
+
+}
+
+/*Media query: small screens (360px)*/
+@media screen and (min-width: 360px) {
+
+    .name-input {
+        top: 11rem;
+    }
 
     .arena {
         height: 34rem;
     }
 
-    #opponent-choice, #player-choice {
+    .player,
+    .opponent {
+        height: 16rem;
+        margin-left: 15px;
+    }
+
+    #opponent-choice,
+    #player-choice {
         max-width: 9rem;
         margin: 10px;
         padding: 0 90px 0 90px;
+    }
+
+    .btns {
+        margin-top: -40px;
     }
 
     .rules {
@@ -162,22 +233,19 @@ body {
 
 /*Media query: large or landscape phones(650px and up)*/
 @media screen and (min-width: 650px) {
-    .name-input, .rules {        
+    .name-input {
+        top: 7rem;
+    }
+
+    .name-input,
+    .rules {
         max-width: fit-content;
         padding: 0 10px 0 10px;
     }
 
-    .rules {
-        bottom: -10rem;
-    }
-
     .arena {
-        max-width: 60rem;
+        height: 17rem;
         flex-direction: row;
-    }
-
-    .rounds {
-        max-width: 40%;
     }
 
     .controls {
@@ -190,17 +258,36 @@ body {
         text-align: center;
     }
 
+    .btns {
+        margin-top: auto;
+    }
+
+    .btns p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rounds {
+        max-width: 40%;
+    }
+
     #cards {
         background: url("../images/controlsbck.png") no-repeat center center/cover;
         width: 378px;
         height: 10rem;
         display: flex;
         justify-content: space-evenly;
-        align-items: center;}
+        align-items: center;
+    }
 
     #cards img {
         max-width: 4rem;
         margin: auto;
+    }
+
+    .rules {
+        bottom: -10rem;
     }
 
 }
@@ -217,7 +304,13 @@ body {
         bottom: auto;
     }
 
-    #opponent-choice, #player-choice {
+    .player,
+    .opponent {
+        padding: 0 4rem 0 4rem;
+    }
+
+    #opponent-choice,
+    #player-choice {
         max-width: 17rem;
     }
 
@@ -230,15 +323,20 @@ body {
 /* Media query: laptops and desktops 992 and up */
 @media screen and (min-width: 992px) {
 
+    .name-input {
+        top: 15rem;
+    }
+
     .arena {
         height: 33rem;
     }
+
 }
 
 /*Media query: large screens*/
-@media screen and (min-width: 1408px){
+@media screen and (min-width: 1408px) {
     body {
-        margin-top: 6rem;
+        margin-top: 3rem;
     }
 
 }
