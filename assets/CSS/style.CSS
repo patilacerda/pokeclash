@@ -32,7 +32,7 @@ h1 {
 }
 
 .name-input button {
-    background-color: #ff1c1c;
+    background-color: #B30000;
     border-width: 3px;
     color: white;
     text-shadow: black 2px 3px 2px;
@@ -131,7 +131,8 @@ h1 {
 #info,
 #play-audio {
     all: unset;
-    font-size: 20px;
+    font-size: 25px;
+    margin-bottom: 4px;
 }
 
 #pokeball {
@@ -163,8 +164,8 @@ h1 {
 }
 
 #social-networks i {
-    font-size: 160%;
-    padding: 5%;
+    font-size: 27px;
+    padding: 5px;
     color: black;
     text-shadow: whitesmoke 2px 2px 2px;
     text-align: center;
@@ -177,8 +178,9 @@ i.fa-solid.fa-circle-half-stroke {
 
 /*Media query: smaller screens (290px)*/
 @media screen and (min-width: 290px) {
-    .name-input {
-        top: 13rem;
+    .name-input,
+    .rules {
+        top: 8rem;
     }
 
     .player,
@@ -187,11 +189,10 @@ i.fa-solid.fa-circle-half-stroke {
     }
 
     #social-networks {
-        margin-left: -40;
+        margin-left: -40px;
     }
 
     #social-networks i {
-        font-size: 130%;
         margin: 0px 10px 0 10px;
     }
 
@@ -201,7 +202,8 @@ i.fa-solid.fa-circle-half-stroke {
 /*Media query: small screens (360px)*/
 @media screen and (min-width: 360px) {
 
-    .name-input {
+    .name-input,
+    .rules {
         top: 11rem;
     }
 
@@ -226,19 +228,17 @@ i.fa-solid.fa-circle-half-stroke {
         margin-top: -40px;
     }
 
-    .rules {
-        bottom: 22rem;
-    }
 }
 
 /*Media query: large or landscape phones(650px and up)*/
 @media screen and (min-width: 650px) {
     .name-input {
-        top: 7rem;
+        
     }
 
     .name-input,
     .rules {
+        top: 7rem;
         max-width: fit-content;
         padding: 0 10px 0 10px;
     }
@@ -286,10 +286,6 @@ i.fa-solid.fa-circle-half-stroke {
         margin: auto;
     }
 
-    .rules {
-        bottom: -10rem;
-    }
-
 }
 
 /* Media query: tablets and larger (768 and up) */
@@ -299,6 +295,7 @@ i.fa-solid.fa-circle-half-stroke {
         height: 28rem;
     }
 
+    .name-input,
     .rules {
         top: 15rem;
         bottom: auto;
@@ -323,8 +320,9 @@ i.fa-solid.fa-circle-half-stroke {
 /* Media query: laptops and desktops 992 and up */
 @media screen and (min-width: 992px) {
 
-    .name-input {
-        top: 15rem;
+    .name-input,
+    .rules {
+        top: 18rem;
     }
 
     .arena {
@@ -337,6 +335,11 @@ i.fa-solid.fa-circle-half-stroke {
 @media screen and (min-width: 1408px) {
     body {
         margin-top: 3rem;
+    }
+
+    .name-input,
+    .rules {
+        top: 22rem;
     }
 
 }
