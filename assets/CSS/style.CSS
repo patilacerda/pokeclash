@@ -17,9 +17,11 @@ body {
 }
 
 .name-input input {
+    max-width: 10rem;
     border-width: 3px;
     margin-top: 10px;
-    padding: 0px 15px 10px 15px;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
     font-family: 'Press Start 2P', cursive;
 }
 
@@ -115,6 +117,11 @@ body {
 /*Rounds div*/
 .rounds {
     height: 6.5rem;
+}
+
+#info {
+    all: unset;
+    font-size: 20px;
 }
 
 #pokeball {
@@ -222,6 +229,7 @@ body {
 
 /* Media query: laptops and desktops 992 and up */
 @media screen and (min-width: 992px) {
+
     .arena {
         height: 33rem;
     }
@@ -232,4 +240,5 @@ body {
     body {
         margin-top: 6rem;
     }
+
 }

@@ -152,3 +152,16 @@ function selectCard() {
     }
 
 }
+
+// Add a click event listener to the "info-button" element
+document.getElementById("info").addEventListener("click", function (event) {
+    event.stopPropagation();
+
+    let rulesDiv = document.querySelector(".rules");
+
+    if (rulesDiv.style.display === "none") {
+        rulesDiv.style.display = "block";
+    } else {
+        rulesDiv.style.display = "none";
+    }
+});
