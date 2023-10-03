@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Meta tags for search engines-->
-    <meta name="keywords" content="pokemon, pokemon game, rock-paper-scissors, strategy game, pokemon battle, elements game, grass, water, fire">
-    <meta name="description" content="Play the ultimate Pokémon-themed rock-paper-scissors game! Choose your type - grass, water, or fire - and see if you can defeat the computer. Can you conquer the elements and become the ultimate Pokémon Trainer? Play now for a fun and challenging gaming adventure!">
+    <meta name="keywords"
+        content="pokemon, pokemon game, rock-paper-scissors, strategy game, pokemon battle, elements game, grass, water, fire">
+    <meta name="description"
+        content="Play the ultimate Pokémon-themed rock-paper-scissors game! Choose your type - grass, water, or fire - and see if you can defeat the computer. Can you conquer the elements and become the ultimate Pokémon Trainer? Play now for a fun and challenging gaming adventure!">
     <!--Stylesheet-->
     <link rel="stylesheet" href="assets/CSS/style.CSS">
     <!--Title-->
@@ -14,66 +17,93 @@
     <!--Favicon-->
     <link rel="icon" type="image/ico" href="favicon.ico">
 </head>
+
 <body>
-    <h1>Pokemon Battle</h1>
-
-    <!--Player's name-->
-    <div class="name-input">
-        <h3>Welcome to Pokeclash!</h3>
-        <p>
-            Insert your Trainer's name!<br>
-            <input type="text" id="player-name"></br>
-            <button type="submit" id="start-button">Go</button>
-        </p>
-    </div>
-
-    <!--Game area-->
-    <div class="arena">
-        <div class="player">
-            <p id="player-input">You</p>
-            <p><span id="player-score">0</span></p>
-        </br>
-            <img id="player-choice">
-        </div>
-        <div class="opponent">
-            <p>Team Rocket</p>
-            <p><span id="opponent-score">0</span></p>
-        </br>
-            <img id="opponent-choice">
-        </div>
-    </div>
-
-    <!--Controls area-->
-    <div class="controls">
-        <div class="btns">
+    <header>
+        <h1>Poké Clash</h1>
+    </header>
+    <main>
+        <!--Player's name-->
+        <div class="name-input">
+            <h3>Welcome to Pokéclash!</h3>
             <p>
-                <button id="info"><i class="fa-solid fa-circle-info"></i></button>
-                <button id="play-audio"><i class="fa-solid fa-play"></i></i></button>
+                Insert your Trainer's name<br>
+                <input type="text" id="player-name"><br>
+                <button id="start-button">Go</button>
             </p>
         </div>
-        <div class="rounds">
-            <p>Choose your Pokémon!</p>
-            <p><span id="pokeballs"></span></p>
+        <!--Game area-->
+        <div class="arena">
+            <div class="player">
+                <p id="player-input">You</p>
+                <p><span id="player-score">0</span></p>
+                <br>
+                <img src="assets/images/empty.png" alt="placeholder" id="player-choice">
+            </div>
+            <div class="opponent">
+                <p>Team Rocket</p>
+                <p><span id="opponent-score">0</span></p>
+                <br>
+                <img src="assets/images/empty.png" alt="placeholder" id="opponent-choice">
+            </div>
         </div>
-        <div id="cards"></div>
-    </div>
-
-    <!--Rules-->
-    <div class="rules">
-        <h3>How to play</h3>
-        <p>
-            Grass beats Water<br>
-            <i class="fa-brands fa-envira"></i> > <i class="fa-solid fa-droplet"></i><br>
-            Fire beats Grass<br>
-            <i class="fa-solid fa-fire"></i> > <i class="fa-brands fa-envira"></i><br>
-            Water beats Fire<br>
-            <i class="fa-solid fa-droplet"></i> > <i class="fa-solid fa-fire"></i>
-        </p>
-
-    </div>
+        <!--Controls area-->
+        <div class="controls">
+            <div class="btns">
+                <p>
+                    <button id="info" aria-label="Click here to open the rule's tab.">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                    <button id="play-audio" aria-label="Click here to play or pause the background song.">
+                        <i class="fa-solid fa-music"></i>
+                    </button>
+                </p>
+            </div>
+            <div class="rounds">
+                <p>Choose your Pokémon!</p>
+                <p><span id="pokeballs"></span></p>
+            </div>
+            <div id="cards"></div>
+        </div>
+        <!--Rules-->
+        <div class="rules">
+            <h3>How to play</h3>
+            <p>
+                Grass beats Water<br>
+                <i class="fa-brands fa-envira"></i> > <i class="fa-solid fa-droplet"></i><br>
+                Fire beats Grass<br>
+                <i class="fa-solid fa-fire"></i> > <i class="fa-brands fa-envira"></i><br>
+                Water beats Fire<br>
+                <i class="fa-solid fa-droplet"></i> > <i class="fa-solid fa-fire"></i>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <ul id="social-networks">
+            <li><a href="https://www.pokemon.com/us/pokedex" target="_blank" rel="noopener"
+                    aria-label="Access the Pokedex for all your Pokémon information needs(opens in a newtab)"><i
+                        class="fa-solid fa-circle-half-stroke"></i></a></li>
+            <li><a href="https://www.youtube.com/user/Pokemon" target="_blank" rel="noopener"
+                    aria-label="Acess The Official Pokemon Youtube channel(opens in a newtab)"><i
+                        class="fa-brands fa-youtube"></i></a></li>
+            <li>
+                <a href="https://www.discord.com/" target="_blank" rel="noopener"
+                    aria-label="Connect with other Pokemon trainers on this Discord server(opens in a newtab)"><i
+                        class="fa-brands fa-discord"></i></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                    aria-label="Stay connected to the latest news about Pokemon by following us on Twitter!(opens in a newtab)"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+            </li>
+        </ul>
+    </footer>
+    <!--Background song-->
     <audio id="audio" src="assets/audio/Pokemon-Theme-16-bit.mp3" loop></audio>
+    <!--Javascript-->
     <script src="assets/JS/script.js"></script>
+    <!--Fontawesome-->
     <script src="https://kit.fontawesome.com/467e25aa0a.js" crossorigin="anonymous"></script>
-
 </body>
+
 </html>
