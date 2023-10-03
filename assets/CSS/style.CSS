@@ -119,7 +119,7 @@ body {
     height: 6.5rem;
 }
 
-#info {
+#info, #play-audio {
     all: unset;
     font-size: 20px;
 }

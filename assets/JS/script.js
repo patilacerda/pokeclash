@@ -165,3 +165,18 @@ document.getElementById("info").addEventListener("click", function (event) {
         rulesDiv.style.display = "none";
     }
 });
+
+// Add an event listener to the "play-audio" button
+document.getElementById("play-audio").addEventListener("click", function () {
+
+    let audio = document.getElementById("audio");
+
+    if (audio.paused) {
+        audio.volume = 0.4;
+        audio.loop = true;
+        audio.play();
+    } else {
+        audio.pause();
+        audio.loop = false;
+    }
+});
