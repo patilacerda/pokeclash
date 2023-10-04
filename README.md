@@ -1,7 +1,7 @@
-<h1>Poké Clash</h1>
+<h1 align="center"><img src="assets/images/title_pkc.png"></h1>
 
 <p>Poké Clash is an exciting Pokemon card battle game inspired by the classic rock-paper-scissors game where you can challenge the computer to a game of strategy.<a href="https://patilacerda.github.io/pokeclash_PP2/" target="_blank"> View the deployed project here.</a></p>
-
+<p align="center"><img src="assets/images/responsive.png"></p>
 <h2>Features</h2>
 <h3>How to play</h3>
 <p>You have the option to personalize your game experience by entering your name. When the game starts, you can insert your own name to appear on the arena screen.<p>
@@ -10,9 +10,11 @@
 <li>The computer will also randomly select a Pokemon card.</li>
 <li>Each Pokemon card has its type (e.g., Fire, Water, Grass).</li>
 <li>The game follows the type advantage system:
+<ul>
 <li>Fire beats Grass</li>
 <li>Grass beats Water</li>
 <li>Water beats Fire</li>
+</ul>
 </li>
 <li>Keep playing to see how many wins you can rack up against the computer!</li>
 </ol>
@@ -31,6 +33,8 @@
 <li>As a competitive player, I want to challenge the computer and test my strategic skills.</li>
 </ul>
 <h3>Wireframes</h3>
+<p>Wireframes created using Balsamiq.</p>
+<p align="center"><img src="assets/images/pokeclash_wireframe.png"></p>
 <h2>Design</h2>
 <h3>Typography</h3>
 <ul>
@@ -38,6 +42,7 @@
 </ul>
 <h3>Colour Scheme</h3>
 <p>The color scheme draws inspiration from Pokemon frames and previous games to create a nostalgic experience:</p>
+<p align="center"><img src="assets/images/color.png"></p>
 <ul>
 <li>Black: Used for buttons, borders, and lettering, providing a sharp and contrasting element.</li>
 <li>Control’s area background and additional tabs(#eaedc8): A soft, yellowish hue reminiscent of the classic Game Boy screen.</li>
@@ -45,6 +50,7 @@
 </ul>
 <h3>Layout</h3>
 <p>The site is a single page with 3 sections:</p>
+<p align="center"><img src="assets/images/layout.png"></p>
 <ul>
 <li>Main Frame: The central game area where battles take place.</li>
 <li>Player Name Tab: A tab where you can insert your name, adding a personal touch to your gaming experience.</li>
@@ -76,9 +82,13 @@
 <h3>Validating</h3>
 <ul>
 <li>HTML - No errors were returned when passing through the <a href="https://validator.w3.org/nu/" target="_blank">W3C Markup Validator</a>.</li>
+<p align=center><img src="assets/images/html_valid.png"></p>
 <li>CSS - No errors were found when passing through the <a href="https://jigsaw.w3.org/css-validator/" target="_blank">W3C CSS Validator</a>.</li>
+<p align=center><img src="assets/images/css_valid.png"></p>
 <li>JavaScript - No errors were found when passing through the <a href="https://jshint.com/" target="_blank">JSHint</a>.</li>
-<li>Accessibility - performance on lighthouse.</li>
+<p align=center><img src="assets/images/js_valid.png"></p>
+<li>Accessibility - Desktop 97% performance average and mobile 85% performance on lighthouse.</li>
+<p align=center><img src="assets/images/lighthouse.png"></p>
 </ul>
 <h3>Further Testing</h3>
 <p>Chrome Developer Tools are used to test the responsiveness on: Desktop, Laptop, iPhone SE, iPhone XR, iPhone 12 Pro, iPad, iPad Pro, Galaxy Fold.</p>
