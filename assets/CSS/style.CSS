@@ -242,10 +242,6 @@ i.fa-solid.fa-circle-half-stroke {
 
 /*Media query: large or landscape phones(650px and up)*/
 @media screen and (min-width: 650px) {
-    .name-input {
-        
-    }
-
     .name-input,
     .rules {
         top: 7rem;
@@ -336,10 +332,10 @@ i.fa-solid.fa-circle-half-stroke {
     }
 
     #pikachu {
-        display: block;
-        width: 7rem;
-        margin-left: 40%;
-        margin-top: -15px;
+        display: inline;
+        width: 6rem;
+        margin: -5px -6% -2px -1%;
+        position: sticky;
     }
 
     .arena {
